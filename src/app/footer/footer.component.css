@@ -1,0 +1,13 @@
+.button {
+    text-align: center;
+}
+
+.footer .icons{
+    text-align: right;
+}
+
+@media (max-width: 980px) {
+    .footer, .footer .button , .footer .icons {
+        text-align: center;
+    }
+}

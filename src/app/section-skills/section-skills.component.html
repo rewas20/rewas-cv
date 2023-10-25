@@ -1,0 +1,20 @@
+<section class="py-5 bg-dark">
+    <div class="container text-white">
+        <h3 class="display-5 fw-medium text-center mb-4">Skills</h3>
+        <p class="text-center w-75 mx-auto mb-5">{{desc}}</p>
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-sm-12 col-lg-2 text-capitalize mb-3 me-4">
+                <h4 class="text-center text-uppercase border-bottom py-4">my focus</h4>
+                 <p *ngFor="let focu of focus; let i = index" class="pt-2">{{focu}}</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div *ngFor="let skill of skills" class="row text-center p-0 m-0 mb-3" style="height: 40px;">
+                    <p class="col-4 h-100 py-2 bg-secondary text-light">{{skill.language}}</p>
+                    <div class="col-8 p-0 h-100 bg-light">
+                        <div class="h-100 bg-dark-subtle" [style]="'width:' +skill.degree+'%;'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
